@@ -1,0 +1,50 @@
+<wm-page name="page1" data-ng-controller="LivelistPageController" pagetitle="Livelist">
+    <wm-header name="header1" content="header"></wm-header>
+    <wm-top-nav name="top_nav1" content="topnav"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel name="left_panel1" columnwidth="2" content="leftnav"></wm-left-panel>
+        <wm-page-content name="page_content1" columnwidth="8">
+            <wm-livelist name="livelist2" navigation="None" dataset="bind:Variables.HrdbEmployeeData.dataSet" listclass="list-group" itemsperrow="4" template="true">
+                <wm-listtemplate name="listtemplate2" layout="media">
+                    <wm-card name="Action Card" picturesource="bind:Variables.HrdbEmployeeData.dataSet.firstname" picturetitle="bind:Variables.HrdbEmployeeData.dataSet.picurl">
+                        <wm-card-actions name="card_actions1" horizontalalign="right">
+                            <wm-button name="button1" iconclass="wi wi-heart" class="btn-transparent"></wm-button>
+                            <wm-button name="button2" class="btn-transparent" caption="" type="button" iconclass="wi wi-bookmark"></wm-button>
+                            <wm-button name="button3" class="btn-transparent" caption="" type="button" iconclass="wi wi-share"></wm-button>
+                        </wm-card-actions>
+                    </wm-card>
+                </wm-listtemplate>
+            </wm-livelist>
+            <wm-livelist name="livelist7" navigation="None" dataset="bind:Variables.HrdbEmployeeData.dataSet" listclass="list-group" itemsperrow="4" template="true">
+                <wm-listtemplate name="listtemplate7" layout="media">
+                    <wm-card name="Article Card" picturesource="bind:Variables.HrdbEmployeeData.dataSet.picurl">
+                        <wm-card-content name="card_content5">
+                            <wm-label class="card-title" caption="bind:Variables.HrdbEmployeeData.dataSet.lastname" name="Title"></wm-label>
+                            <wm-label name="Description" class="card-text" caption="bind:Variables.HrdbEmployeeData.dataSet.firstname"></wm-label>
+                        </wm-card-content>
+                        <wm-card-actions name="card_actions6">
+                            <wm-button class="btn-warning" caption="Share" type="button" name="button1"></wm-button>
+                            <wm-button class="btn-warning" caption="Explore" type="button" name="button2"></wm-button>
+                        </wm-card-actions>
+                    </wm-card>
+                </wm-listtemplate>
+            </wm-livelist>
+            <wm-livelist name="livelist8" navigation="None" dataset="bind:Variables.HrdbEmployeeData.dataSet" listclass="list-group" itemsperrow="4" template="true">
+                <wm-listtemplate name="listtemplate8" layout="media">
+                    <wm-card name="Picture Card" picturesource="bind:Variables.HrdbEmployeeData.dataSet.picurl">
+                        <wm-card-content name="card_content6">
+                            <wm-label class="card-title" caption="bind:Variables.HrdbEmployeeData.dataSet.firstname" name="Title"></wm-label>
+                            <wm-label name="Description" class="card-text" caption="bind:Variables.HrdbEmployeeData.dataSet.lastname"></wm-label>
+                        </wm-card-content>
+                        <wm-card-actions name="card_actions7">
+                            <wm-button class="btn-warning" caption="Share" type="button" name="Share"></wm-button>
+                            <wm-button class="btn-warning" caption="Explore" type="button" name="Explore"></wm-button>
+                        </wm-card-actions>
+                    </wm-card>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+        <wm-right-panel name="right_panel1" columnwidth="2" content="rightnav"></wm-right-panel>
+    </wm-content>
+    <wm-footer name="footer1" content="footer"></wm-footer>
+</wm-page>

@@ -1,6 +1,6 @@
 {
   "HrdbEmployeeData" : {
-    "_id" : "wm-HrdbEmployeeData-wm.LiveVariable-1467197931429",
+    "_id" : "wm-HrdbEmployeeData-wm.LiveVariable-1467198103665",
     "name" : "HrdbEmployeeData",
     "owner" : "Page",
     "category" : "wm.LiveVariable",
@@ -672,7 +672,7 @@
       "primaryFields" : [ "eid" ]
     },
     "isDefault" : true,
-    "bindCount" : 2,
+    "bindCount" : 16,
     "tableName" : "EMPLOYEE",
     "tableType" : "TABLE",
     "properties" : [ "department", "employeeByManagerid" ],
